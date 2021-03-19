@@ -2,24 +2,21 @@
 
 # User I/O Constraints file 
 
-# Version: v12.6 12.900.20.24
+# Version: PolarFire v2.0 12.200.0.20
 
-# Family: PolarFire , Die: MPF300TS , Package: FCG484
+# Family: PolarFire , Die: MPF300TS_ES , Package: FCG484
 
-# Date generated: Wed Mar 17 21:20:27 2021 
-
+# Date generated: Sat Nov 25 18:30:59 2017 
 
 # 
 # User Locked I/O Bank Settings
 # 
-
 
 # 
 # Unlocked I/O Bank Settings
 # The I/O Bank Settings can be locked by directly editing this file
 # or by making changes in the I/O Attribute Editor
 # 
-
 
 # 
 # User Locked I/O settings
@@ -46,6 +43,18 @@ set_io -port_name clk  \
 set_io -port_name green_led1  \
     -pin_name D6              \
     -fixed true               \
+    -DIRECTION OUTPUT
+
+
+#set_io -port_name green_led2  \
+    -pin_name D8              \
+    -fixed true               \
+    -DIRECTION OUTPUT
+
+
+#set_io -port_name red_led1  \
+    -pin_name D7            \
+    -fixed true             \
     -DIRECTION OUTPUT
 
 
